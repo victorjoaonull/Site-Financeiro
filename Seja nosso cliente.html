@@ -1,0 +1,241 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimos</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: #6177CF;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .img.logo{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .div.sites {
+            color: white;
+        }
+        .div.navegacao {
+            background-color:#222533;
+            padding-top: 20px;
+            border-right: 1px solid rgb(255, 255, 255);
+            width: 170px;
+            height: 100%;
+            color: white;
+            
+        }
+        .secao.text {
+            margin-top: 100px;
+            padding: 50px;
+            margin-bottom: 60px;
+            margin-left: 250px;
+            text-align: center;
+            border: 1px solid black;
+           
+        }
+        .secao.text-all {
+            display: flex;
+            padding-left: 40px;
+            
+        }
+        .div.img-principal {
+            width: 100%;
+            margin-top: 120px;
+            text-align: center;
+        }
+        .img.principal{
+            text-align: center;
+        }
+        .div.secao-navegacao {
+            display: inline-flex;
+            height: 100%;
+            width: 100%;
+        }
+        .div.selecao {
+            margin-left: 40px;
+            display: flexbox;
+        }
+        .opcoes {
+            margin-bottom: 5px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+            
+        }
+        .div.secao{
+            width: 100%;
+            height: 100%;
+        }
+
+        
+        .div.input-all {
+            color: azure;
+            margin: 40px;
+            background-color: #222533;
+            border: 1px solid rgb(255, 255, 255);
+            height: 400px
+        }
+        .div.form-all {
+            margin: 40px;
+            height: 100%;
+        }
+        
+        .rodape.text {
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            width: 100%;
+        }
+        .rodape.texts{
+            display: flex;
+        }
+        .div.footer{
+            background-color:#222533;
+            width: 100%;
+            height: 140px;
+            border-top: rgb(255, 255, 255) 1px solid;
+        }
+        .div.rede-social {
+            align-items: center;
+        }
+        .rodape.texts-text{
+            font-size: 14px;
+        }
+        .div.colunm1{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            width: 100%;
+        }
+        .text-colunm1 {
+            width: 100%;
+            text-align: center;
+        }
+        #text1 {
+            height: 40px;
+            width: 500px;
+        }
+        .div.colunm2{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            width: 100%;
+        }
+        .text-colunm2-row1 {
+            margin-left: 150px;
+        }
+        .text-colunm2-row2 {
+            width: 100%;
+            margin-left: 50px;
+        }
+        .text-colunm2-row3 {
+            width: 100%;
+            margin-left: 50px;
+        }
+        #text2 {
+            height: 40px;
+            width: 500px;
+        }
+        .text-nome {
+            margin-left: 20px;
+        }
+        .div.colunm3{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            padding-left: 1300px;
+        }
+        #button-cadastrar {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div secao-navegacao">
+        <div class="div navegacao">
+            <nav class="nav navegacao">
+                <div class="img logo">
+                    <img src="./imagens/logo-completo-branco.png" width="75" height="50">
+                </div>
+                <div >
+                <ul >
+                    <li>
+                        <a href="Pagina Inicial.html" class="div sites">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="Emprestimos.html" class="div sites">Empréstimos</a>
+                    </li>
+                    <li>
+                        <a href="Seja nosso cliente.html" class="div sites">Seja nosso cliente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="div secao ">
+            <section class=" section all">
+                <div class="div img-principal">
+                    <img src="./imagens/teste-banner.png" width="1000px" height="200px" class="img principal">
+                </div>
+                <div class="div input-all">
+                    <div class="div form-all">
+                        <form action="POST">
+                            <div class="div colunm1">
+                            <div class="text-colunm1">
+                                <input type="text" name="texto-recebe" id="text1" value="Nome" class="text-nome">
+                            </div>
+                            <div class="text-colunm1"> 
+                                <input type="email" name="texto-recebe" id="text1" value="E-mail">
+                            </div>
+                        </div>
+                        <div class="div colunm2">
+                        <div class="text-colunm2-row1">
+                            <select name="opcao1" id="opcao1" class="opcoes">
+                                <option value="valeu-default">Tipo de serviço</option>
+                            </select>
+                        </div>
+                        <div class="text-colunm2-row2">
+                            <input type="text" name="texto-recebe" id="text2">
+                        </div>
+                        <div class="text-colunm2-row3">
+                            <input type="checkbox" name="checkbox-aposentado" id="checkbox-aposentado">
+                            <label for="checkbox-aposentado">Sou aposentado
+                        </div>
+                    </div>
+                    <div class="div colunm3">
+                        <div class="button-cadastrar">
+                            <input type="button" value="Cadastrar" id="button-cadastrar">
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="div footer">
+                    <footer class="div footer">
+                        <div class="rodape texts">
+                            <div class="rodape text">
+                              <p>Redes Sociais</p>
+                              <div class="div rede-social">
+                                <img src="./imagens/logo-face.png" width="20px">
+                                <a href="facebook.com">Facebook</a>
+                              </div>
+                            </div>
+                            <div class="rodape text">
+                              <p >Contato</p>
+                              <div class="rodape texts-text">
+                                <p>Lorem ipsum </p>
+                                <p>Lorem ipsum </p>
+                                <p>Lorem ipsum </p>
+                              </div>
+                            </div>
+                          </div>
+                    </footer>
+                </div>
+            </section>
+            </div>
+        </div>
+</body>
+</html>
